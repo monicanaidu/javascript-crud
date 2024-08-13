@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html" class="logo">CRUD Project</a>
+        <div class="menu-items">
+            <a href="index.html">Home</a>
+            <a href="create.html">Create</a>
+        </div>
+    </nav>
+
+    <section class="container">
+         <div class="card">
+            <div class="title">Update User</div>
+         </div>
+
+         <div class="form-card" onsubmit="updateHandler(event)">
+            <form autocomplete="off" method="post">
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-item">
+                    <label for="mobile">Mobile</label>
+                    <input type="number" name="mobile" id="mobile" class="form-control" required>
+                </div>
+                <div class="form-item">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="22" rows="4" required class="form-control"></textarea>
+                </div>
+                <div class="form-item">
+                    <input type="submit" value="Update User" class="btn btn-success">
+                    <input type="reset" value="Clear Form" class="btn btn-clear">
+                </div>
+            </form>
+         </div>
+    </section>
+
+    <script src="./js/update.js"></script>
+</body>
+</html>

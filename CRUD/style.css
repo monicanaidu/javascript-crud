@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 50px;
+  font-family: sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 50px;
+}
+
+nav .logo {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+nav .menu-items a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #222;
+  font-weight: 500;
+  padding: 12px 14px;
+  background-color: #666;
+}
+
+nav .menu-items a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  background-color: #fff;
+  margin: 0px auto 0px;
+  padding: 40px;
+  box-shadow: outset 1px 1px 10px #dad707ff;
+  margin-top: 60px;
+  border-radius: 4px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .title {
+  font-size: 2rem;
+  color: green;
+}
+
+.form-card {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-card .form-item {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 10px;
+  margin-top: 10px;
+}
+
+.form-card .form-control {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.form-item:last-child {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-danger {
+  background-color: orangered;
+}
+.btn-clear {
+  background-color: orange;
+}
+
+/* table css */
+table {
+  width: 100%;
+  table-layout: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  a.btn {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
